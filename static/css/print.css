@@ -1,0 +1,22 @@
+@import "custom.css";
+
+html, body {
+    background: white;
+}
+
+#wrapper {
+    margin: 0;
+    margin-top: 23px;
+}
+
+#wrapper header {
+    display: none;
+}
+
+nav {
+    display: none;
+}
+
+article {
+    font-family: "DejaVu Serif", serif;
+}
