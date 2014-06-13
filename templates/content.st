@@ -8,7 +8,7 @@ $if(revision)$
 $endif$
 $if(markuphelp)$
 <nav id="markuphelpnav">
-<p><a href="#markuphelp">Need help with the syntax?</a></p>
+<p><a href="#markuphelp">Need help with the formatting?</a></p>
 </nav>
 $endif$
   $content$
