@@ -30,3 +30,23 @@
   });
 });
 */
+
+
+$(function() {
+    $('#markuphelp').addClass('popup');
+    $('.popup').css('display', 'none');
+    $('.popup').prepend('<a href="javascript:void(0)" class="close">x</a>');
+    $('.popup a.close').click(function() {
+        $(this).parent().css('display', 'none');
+    });
+    $('#markuphelpnav a').click(function() {
+        $('#markuphelp').css('display', 'block');
+        return false;
+    });
+
+    $(document).keyup(function(e) {
+        if (e.keyCode == 27) {
+            $('.popup').css('display', 'none');
+        }
+    });
+});

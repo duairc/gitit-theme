@@ -1,5 +1,5 @@
   <ul
-    ><li><a href="$base$$articleUrl$" class="article$if(isdiscusspage)$$else$ selected$endif$">Article ↓</a
+    ><li$if(isdiscusspage)$$else$ class="selected"$endif$><a href="$base$$articleUrl$" class="article">Article ↓</a
       ><ul
         ><li><a href="$base$$articleUrl$">Read</a></li
         ><li><a href="$base$/_showraw$articleUrl$">Source code</a></li
@@ -34,7 +34,7 @@
         ></li
       ></ul
     ></li
-    ><li><a href="$base$$discussionUrl$" class="discussion$if(isdiscusspage)$ selected$else$$endif$">Discussion ↓</a
+    ><li$if(isdiscusspage)$ class="selected"$else$$endif$><a href="$base$$discussionUrl$" class="discussion">Discussion ↓</a
       ><ul
         ><li><a href="$base$$discussionUrl$">Read</a></li
         ><li><a href="$base$/_showraw$discussionUrl$">Source code</a></li

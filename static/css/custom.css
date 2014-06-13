@@ -42,37 +42,37 @@ header > a:hover {
     color: inherit;
 }
 
-nav {
+header nav {
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     background-color: #fbfbfb;
 }
 
-nav ul {
+header nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-nav li {
+header nav li {
     display: inline-block;
     position: relative;
     vertical-align: bottom;
 }
 
-nav > ul > li > a {
+header nav > ul > li > a {
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
 }
 
-nav li:hover > a {
+header nav li:hover > a {
     background-color: #b3e0ff;
     color: white;
 }
 
-nav li ul {
+header nav li ul {
     display: none;
     position: absolute;
     top: 23px;
@@ -84,26 +84,26 @@ nav li ul {
     -moz-box-shadow: 1px 1px 3px #e0e0e0;
 }
 
-nav li:hover > ul {
+header nav li:hover > ul {
     display: block;
 }
 
-nav li ul a {
+header nav li ul a {
     display: block;
     padding: 0 14px;
     width: 120px;
 }
 
-nav li ul li {
+header nav li ul li {
     display: block;
 }
 
-nav li ul li ul {
+header nav li ul li ul {
     left: 115px;
     top: 0;
 }
 
-nav .selected {
+header nav li.selected > a {
     background-color: #b3e0ff;
     color: white;
     box-shadow: 0px 0px 3px #e0e0e0;
@@ -111,12 +111,12 @@ nav .selected {
     -moz-box-shadow: 0px 0px 1px #e0e0e0;
 }
 
-nav:hover .selected {
+header nav:hover li.selected > a {
     background-color: inherit;
     color: #0099ff;
 }
 
-nav:hover .selected:hover {
+header nav:hover li.selected:hover > a {
     background-color: #b3e0ff;
     color: white;
 }
@@ -150,25 +150,25 @@ nav:hover .selected:hover {
     width: 260px;
 }
 
-main nav {
+main header nav {
     float: right;
 }
 
-main nav > ul {
+main header nav > ul {
     display: inline;
 }
 
-main nav > ul:first-child > :first-child > ul {
+main header nav > ul:first-child > :first-child > ul {
     left: 0;
 }
 
-main nav > ul > li > a {
+main header nav > ul > li > a {
     padding: 4px 7px;
     padding-top: 3px;
     text-transform: capitalize;
 }
 
-main nav li ul {
+main header nav li ul {
     width: 148px;
     right: 0;
 }
@@ -558,7 +558,7 @@ input[type="file"] {
     width: 332px;
 }
 
-pre, main form, nav, figure, div.figure {
+pre, main form, header nav, figure, div.figure {
     background-color: #fbfbfb;
     box-shadow: 1px 1px 3px #e0e0e0;
     -webkit-box-shadow: 1px 1px 3px #e0e0e0;
@@ -820,4 +820,30 @@ label[for="username"]:after {
 #mapform span {
     line-height: 23px;
     vertical-align: top;
+}
+
+.popup {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -323px;
+    width: 600px;
+    height: 230px;
+    background-color: rgba(255, 255, 255, 1);
+    overflow: auto;
+    padding: 23px;
+    background-color: #fbfbfb;
+    box-shadow: 1px 1px 500px black;
+    -webkit-box-shadow: 1px 1px 500px black;
+    -moz-box-shadow: 1px 1px 500px black;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.popup a.close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    line-height: 0px;
 }

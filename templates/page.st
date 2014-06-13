@@ -43,9 +43,6 @@
         </header>
         $content()$
         <footer>
-        $if(markuphelp)$
-        $markuphelp()$
-        $endif$
         </footer>
     </main>
     $javascripts$
